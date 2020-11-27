@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>CUBE|ZS</title>
+        <link rel="stylesheet" href="boot.css" >
+        <link rel="stylesheet" href="cubezs.css" >
+        <link href="font-awesome/css/all.css" rel="stylesheet">  
+        <script src="https://code.jquery.com/jquery-1.12.4.js"> </script>
+    
+    <script>
+        function menu_content() {
+        var x = document.getElementById("menus");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        var current=1;
+        var intr=setInterval(function() {
+              $('#slide-img'+current).hide();
+              $('#slide-img-li'+current).removeClass('active');
+              current= current+1;
+              if(current>4)
+              current=1;
+              $('#slide-img'+current).show();
+              $('#slide-img-li'+current).addClass('active');
+           },3000
+           );
+        function goto(present)
+        {
+            $("img[id^='slide-img']").hide();
+            $("li[id^='slide-img-li']").removeClass('active');
+            current = present;
+            $('#slide-img'+current).show();   
+            $('#slide-img-li'+current).addClass('active');     
+        }
+    </script>
+    </head>
+    <body>
+        <div class="containerr">
+            <div class="mobile_view_header">
+                <a href="#"><img src="mobile_view/mobile_logo.png" class="mble_logo_img"></a>
+                <a><i class="fas fa-bars" id='icon-menu' onclick="menu_content()"></i></a>
+                <ul id="menus">
+                    <li>About</li>
+                    <li>Ecommerce</li>
+                    <li>Featured</li>
+                    <li>VR</li>
+                    <li>Service</li>
+                </ul>
+            </div>
+            <div class="firstpage">
+                <div class="header">
+                    <a href="#"><div class="logo"><img src="essential/logio.png"/></div></a>
+                    <div class="topnav">
+                        <a href=""><img src="essential/icon1.png">  About</a>
+                        <a href="">ECommerce</a>
+                        <a href="">Featured</a>
+                        <a href="">VR</a>
+                        <a href="">Service</a>
+                    </div>
+                </div>
+               
+                <div class="content1">
+                   <div class="contentbox">
+                        <p id='tag_line'>BEST IN CLASS APPLICATION SERVICES</p>
+                        <p style='padding-top: 15px;'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                        <div id='dwld_div_btn'>
+                            <a href=""><img src="essential/ios.png" id='ios_btn'></a>
+                            <a href=""><img src="essential/playstore.png" id='ps_btn'></a>
+                        </div>
+                   </div>
+                   <div class="imagebox1">
+                        <img src="essential/mobile.png">
+                   </div>
+                </div>
+            </div> 
+            
+            <div class="secondpage" style="background: white;">
+                <div class="imagebox2">
+                    <img src="essential/mobile2.png" id="esn_mb2">
+                </div>
+                <div class="contentbox1">
+                    <h4 style='font-size: 40px; color:blue;padding-top: 10px;'>About Ecommerce</h4>
+                    <div id='about_line'>___________</div>
+                    <h2 style='padding-top: 54px;color:red;font-size:30px;letter-spacing: 2px;'>ONLINE <span style='color:blue'>SHOPPING</span></h2>
+                    <p id="con-box1-p">It is a long established fact that a reader is distracted by readable content content of a page by looking at its content. It is LoperIpseum.</p>
+                    <div class="dwnld_btn" style='display:flex'>
+                        <button class="btn btn-primary" id='buttons' ><img src="essential/android.png">  Download</button>
+                        <button class="btn btn-primary" id='buttons' ><img src="essential/apple.png">  Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="thirdpage">
+                <div id='pg3_headline'><h3>FEATURED<h3></div>
+            <div class="page3" style="display:flex;width:100%">
+                <div class="thirdpage-content1" >
+                    <div class="heading1">
+                            <div class="rounded-circle"></div>
+                            <div class="first-head">
+                            <p>HEADING1</p>
+                           <p>It is a long established fact that a reader is distracted</p>
+                        </div>
+                    </div>
+                    <div class="heading2" >
+                        <div class="rounded-circle"></div>
+                        <div class="first-head" > 
+                           <p>HEADING2</p>
+                           <p>It is a long established fact that a reader is distracted</p>
+                        </div>
+                    </div>
+                    <div class="heading2">
+                        <div class="rounded-circle"></div>
+                        <div class="first-head">
+                           <p>HEADING3</p>
+                           <p>It is a long established fact that a reader is distracted</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="img_mble">
+                        <img src="essential/mobile3.png">
+                    </div>
+            </div>
+            <div class="thirdpage-content2" style='padding-left: 10px;'>
+                <div class="heading4" style='margin-top: 80px;'>
+                    <div class="rounded-circle"></div>
+                    <div class="four-head">
+                    <p>HEADING4</p>
+                   <p>It is a long established fact that a reader is distracted</p>
+                </div>
+            </div>
+            <div class="heading5">
+                <div style='background:white; width:50px; height:50px;margin-top: 50;margin-left: 10px;border-radius: 50px;'></div>
+                <div class="four-head"> 
+                   <p>HEADING5</p>
+                   <p>It is a long established fact that a reader is distracted</p>
+                </div>
+            </div>
+            <div class="heading6">
+                <div style='background:white; width:50px; height:50px;margin-top: 50;margin-left: 10px;border-radius: 50px;'></div>
+                <div class="four-head">
+                   <p>HEADING6</p>
+                   <p>It is a long established fact that a reader is distracted</p>
+                </div>
+            </div>
+            </div>
+            <div class="page4">
+                <div class="vr_img" style='margin-top: 60px;'>
+                    <img src="essential/VR.png">
+                </div>
+                <div class="vr_text" style='margin-top: 60px; margin-left: 46px;'>
+                    <h2 style='padding-top: 54px;color:red;font-size:30px;letter-spacing: 5px;font-size:35px'>vir<span style='color:black'>tual reality</span></h2>
+                    <p style='color:black;font-size: 25px;'>It is a long established fact that established fact that a reader is distra established fact that a reader is distra a reader is distractedIt is a long established fact that a reader is distracted</p>
+                </div>
+            </div>
+            <div class="page5" >
+                <h3>SERVICES</h3>
+                <div class="heading-content1" >
+                    <div class="head1" >
+                        <div class="rounded-circle1"></div>
+                        <p style='text-align:center;'>Heading1</p>
+                        <p style='margin: 13px 11px;'>It is a long established fact that a reader is distracted</p>
+                    </div>
+                    <div class="head1" >
+                        <div class="rounded-circle1"></div>
+                        <p style='text-align:center;'>Heading2</p>
+                        <p style='margin: 13px 11px;'>It is a long established fact that a reader is distracted</p>
+                    </div>
+                    <div class="head1">
+                        <div class="rounded-circle1"></div>
+                        <p style='text-align:center;'>Heading3</p>
+                        <p style='margin: 13px 11px;'>It is a long established fact that a reader is distracted</p>
+                    </div>
+                </div>
+                <div class="heading-contents" >
+                    <div class="head1">
+                        <div class="rounded-circle1"></div>
+                        <p style='text-align:center;'>Heading4</p>
+                        <p style='margin: 13px 11px;'>It is a long established fact that a reader is distracted</p>
+                    </div>
+                    <div class="head1">
+                        <div class="rounded-circle1"></div>
+                        <p style='text-align:center;'>Heading5</p>
+                        <p style='margin: 13px 11px;'>It is a long established fact that a reader is distracted</p>
+                    </div>
+                    <div class="head1">
+                        <div class="rounded-circle1"></div>
+                        <p style='text-align:center;'>Heading6</p>
+                        <p style='margin: 13px 11px;'>It is a long established fact that a reader is distracted</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page6">
+                <h3 style='color:black'>TESTIMONIALS</h3>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style='text-align:center'>
+                    <img src="essential\testimonial1.png" id='slide-img1' >
+                    <img src="essential\testimonial2.png" id='slide-img2' style="display:none;">
+                    <img src="essential\testimonial3.png" id='slide-img3' style="display:none;">
+                    <img src="essential\testimonials4.png" id='slide-img4' style="display:none;">`
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <br/><br/><br/>
+                    <ol class="carousel-indicators">
+                        <li id='slide-img-li1' data-target="#myCarousel" data-slide-to="0" class="active" onclick="goto(1)"></li>
+                        <li id='slide-img-li2' data-target="#myCarousel" data-slide-to="1" onclick="goto(2)"></li>
+                        <li id='slide-img-li3' data-target="#myCarousel" data-slide-to="2"onclick="goto(3)"></li>
+                        <li id='slide-img-li4' data-target="#myCarousel" data-slide-to="3" onclick="goto(4)"></li>
+                      </ol>
+                </div>
+                <p style='color:black; text-align: center;'>It is a long established fact that a reader is distracted</p>
+            </div>
+            <div class="footer" style='background-color: blue;height:80px'>
+                <div class="icon">
+                   <a href="https://accounts.google.com/" target="_blank"> <i class="fab fa-google-plus-g" id='icon-media'></i></a>
+                   <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" id='icon-media'></i></a> 
+                   <a href=" https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" id='icon-media'></i></a>
+                   <a href="https://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin-in" id='icon-media'></i></a>
+                </div>
+                <p style='text-align: center;padding-top:5px;font-size: 14px;'>copy rigts reserved</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,389 @@
+    body{
+        margin:0px;
+    }
+      @font-face {
+      font-family: myFirstFont;
+       src: url(comfortaa/Comfortaa-Bold.ttf); 
+     }
+     div{
+         font-family: myFirstFont;
+         font-size:20px;
+     }
+ .firstpage{
+     background-image: url("essential/bg.png");
+     object-fit:cover;
+     height:767px;
+     width:100%;
+ }
+ .header{
+     width:100%;
+     float:left;
+ }
+ .logo{
+     width:30%;
+     margin-top: 50px;
+     margin-left: 60px;
+ }
+ .topnav{
+     width:70%;
+     float:right;
+     margin-top: -27px;
+ }
+ .topnav a{
+     text-decoration: none;
+     color:white;
+     padding:28px ;
+ }
+ a:hover{
+     color:white !important;
+     text-decoration: none !important;
+ }
+ .content1{
+     width:100%;
+ }
+ .contentbox{
+     width:31%;
+     float:left;
+     margin:70px;
+     color:white;
+ }
+ #tag_line{
+     margin-top: 49px;
+     font-size: 25px;
+ }
+ #dwld_div_btn{
+     display: flex;
+     padding-top: 20px;
+ }
+ .imagebox1{
+     width:40%;
+     float:right;
+     margin: 59px;
+     margin-top: 120px;
+ }
+ .secondpage{
+     width:100%;
+     float:left;
+     background: white;
+     height:700px;
+     margin-top: -59px;
+ }
+ .imagebox2{
+     width:40%;
+     margin-top: 100px;
+ }
+ .contentbox1{
+     width:55%;
+     float: right;
+     margin-top: -600px;
+ }
+ #buttons:hover{
+     background-color: black !important;
+ }
+ #buttons{
+     margin-right: 7px;
+     margin-top: -7px;
+     font-size: 20px;
+     padding: 15px 45px;
+     border-radius:50px;
+     color:#007bff;
+     background-color:white
+ }
+ #about_line{
+     color:black;
+     margin-top: -27px;
+ } 
+ .con-box1-p{
+     font-size:25px!important;
+     width:75% !important;
+     color:black!important;
+ }
+ .thirdpage{
+     background-image: url("essential/bg2.png");
+     height:700px;
+     width:100%;
+     margin-top: 699px;
+ }
+ .thirdpage-content1{
+     width:35%;
+     margin-top: -29px;
+     color: white;
+ }
+ .heading1{
+     margin-top: 88px;
+ }
+ .heading2{
+     margin-top: 41px;
+ }
+ .first-head{
+     margin-top:-50px;margin-left: 81px;
+ } 
+ .img_mble{
+     width:30%;
+     margin-top: -23px;
+ }
+ .thirdpage-content2{
+     width:35%;
+     float:right;
+     margin-top: -533px;
+     color: white;
+ }
+ .rounded-circle{
+     background:white; width:50px; height:50px;margin-top:20px;margin-left: 10px;
+ }
+ .four-head{
+     margin-top:-58px;margin-left: 81px;
+ }
+ .page5{
+     background-image: url("essential/bg2.png");
+     object-fit: cover;
+ }
+
+ .heading-content1  div:hover{
+    background-color:rgba(201, 201, 12, 0.89) !important;
+ }
+ .heading-contents  div:hover{
+    background-color:rgba(201, 201, 12, 0.89) !important;
+ }
+.head1{
+    background: #547291;margin: 10px;
+
+} 
+.rounded-circle1{
+ background:white; width:50px; height:50px;margin-top:20px;margin-left: 180px;border-radius: 50px;
+    text-align: center;
+}
+ 
+ .icon{
+     text-align: center;
+     margin-top:30px;
+     padding-top: 15px;
+ }
+ #icon-media{
+     color:black;
+     padding-left:5px;
+     padding-top:3px;
+     background:white;
+     border-radius: 100px;
+     width:28px;
+     height:28px;
+ }
+ #icon-media:hover{
+     color:blue;
+ } 
+ .mobile_view_header{
+     display:block;
+ }
+ .mble_logo_img{
+     display:none;
+ }
+ #icon-menu{
+     display:none;
+ }
+ 
+ @media only screen and (min-width:700px){
+     div.page4{
+         display:flex;
+     }
+     h3{
+     text-align: center;
+     padding-top:70px;
+     letter-spacing: 12px;
+     color:white;
+     }
+     .heading-content1{
+         display:flex;
+         color: white;
+     } 
+     .heading-contents{
+         display:flex;
+         color: white;
+     }
+     .carousel-indicators li {
+     width: 10px !important;
+     height: 10px !important;
+     border-radius: 100%;
+     background-color:blue !important;
+     }
+    .carousel>img{
+     width:400px;
+     height:300px;
+     }
+     #menus{
+         display:none;
+     }
+ }
+ @media only screen and (max-width:700px){
+     .firstpage{
+         background-image: none;
+         height:885px;
+     }
+     .header{
+         display:none;
+     }
+     .mobile_view_header{
+         background-color: white;
+         display:block; 
+         width:100%;  
+     }
+     .mble_logo_img{
+         display:block;
+         width:30%;
+         margin-top:35px;
+         margin-left:55px;
+         float:left;
+     }
+     #icon-menu{
+         display: block;
+         width: 20%;
+         float: right;
+         margin-top: 43px;
+         color: black;
+     }
+     p{
+         color:black;
+     }
+     @font-face {
+      font-family: myFirstFont;
+       src: url(comfortaa/Comfortaa-Bold.ttf); 
+     }
+     
+     .content1{
+         width:100%;
+     }
+     .contentbox{
+         width:95%;
+         float:left;
+         margin:34px;
+         color:white;
+     }
+     #tag_line{
+         margin-top: 30px;
+         font-size: 25px;
+     }
+     #ios_btn{
+         padding:10px;
+     }
+     #ps_btn{
+         padding:10px 50px;
+     }
+     .imagebox1{
+         margin-right: 226px;
+         margin-top: 20px;
+    } 
+    #esn_mb2{
+         padding-left: 70px;
+         margin-top: -50px;
+    }
+    .contentbox1{
+       width:100%;
+       float: right;
+       margin-top: -30px;
+       
+     }
+     #about_line{
+         display:none;
+     }
+     p{
+         width:100%;
+     }
+     .thirdpage{
+         background-image: none;
+         color:black;
+         padding-top:250px;
+     }
+     #pg3_headline{
+         color: black;
+         margin-top: 290px;
+     }
+     #buttons{
+         padding: 15px 30px;
+         margin: 20px;
+     }
+     .img_mble{
+         margin-left: -156px;
+     }
+     .thirdpage-content2{
+         display:none;
+     }
+     .thirdpage-content1{
+         width:50%;
+         margin-top: 468px;
+     }
+     .rounded-circle{
+     background:black; width:50px; height:50px;margin-top:20px;margin-left: 10px;
+     }
+     .heading1{
+         margin-top: 88px;
+         margin-left: 150px;
+         width:100%;
+     }
+     .heading2{
+        margin-top: 41px;
+        margin-left: 150px;
+        width:100%;
+     }
+     .first-head{
+         width:100%;
+     }
+     .page5{
+         background-image: none;
+     }
+     h3{
+         text-align: center;
+         padding-top:70px;
+         letter-spacing: 12px;
+         color:black;
+     }
+     .heading-content1{
+         display:block;
+         width:50%;
+         text-align: center;
+         margin-left:128px;
+     }
+     .heading-contents{
+         display:block;
+         width:50%;
+         text-align: center;
+         margin-left:128px;
+     }
+     .carousel-indicators li {
+     width: 10px !important;
+     height: 10px !important;
+     border-radius: 100%;
+     background-color:blue !important;
+     }
+    .carousel>img{
+     width:250px;
+     height:200px;
+     }
+     div.page4{
+         display:block;
+     }
+     .rounded-circle1{
+         margin-left:82px;
+     }
+     h4{
+         padding-left:10px;
+     }
+     h2{
+         padding-left:10px;
+     }
+     #con-box1-p{
+         padding-left:20px;
+     }
+     .dwnld_btn{
+         padding-left:40px;
+     }
+     #dwld_div_btn {
+         padding-left:0px;
+     }
+     #menus{
+         display:none;
+         width:25%;
+         z-index:1;
+         float:right;
+         padding-top: 30px;
+     }
+ }
+ 
